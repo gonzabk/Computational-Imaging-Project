@@ -7,6 +7,13 @@ This project requires the following dependencies
 * [tensorpack](https://github.com/tensorpack/tensorpack)=0.9.8
 * tensorflow=1.12
 * python bindings for opencv
+
+Run the following installation steps to use on GPU (March 2024):
+* conda create -n syntex python=3.6 cudatoolkit=9.0
+* conda install tensorflow-gpu=1.12
+* pip install tensorpack==0.9.8
+* pip install opencv-python==3.4.2.17
+
 ### Installation
 Clone this project 
 ```
@@ -18,6 +25,16 @@ Add the path that contains this project (e.g. path/to/syntex) to your `PYTHONPAT
 export PYTHONPATH=$PYTHONPATH:path/to
 ```
 
+To run the Progressive model, use the following command:
+```
+python progressive_model.py
+```
+
+Load trained models (the two files starting by model-{number of iterations}, which are insided train_log/single_model) and the json file (with training statistics) to the Models/your_model folder.
+
+Use plot_progressive.py to plot the output image. Select the right paths to find your model.
+
+Use Models/plots.py to plot losses and other metrics. Select your model.
 
 ## Methods
 ### [gatys](gatys)
