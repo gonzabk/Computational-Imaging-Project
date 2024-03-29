@@ -30,9 +30,9 @@ To run the Progressive model, use the following command:
 python progressive_model.py
 ```
 
-Load trained models (the two files starting by model-{number of iterations}, which are insided train_log/single_model) and the json file (with training statistics) to the Models/your_model folder.
+Load the trained models (the two files starting by model-{number of iterations}, which are insided train_log/single_model) and the json file (with training statistics) to the Models/your_model folder.
 
-Use plot_progressive.py to plot the output image. Select the right paths to find your model.
+To evaluate the model, go to the po folder and from there, use plot_progressive.py to plot the output image. Select the right paths to find your model.
 
 Use Models/plots.py to plot losses and other metrics. Select your model.
 
